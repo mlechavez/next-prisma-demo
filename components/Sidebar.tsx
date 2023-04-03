@@ -1,8 +1,10 @@
 import { HStack, List, ListItem, Text, Link } from "@chakra-ui/react";
 import { MdOutlineDashboard } from "react-icons/md";
 import { FaTasks } from "react-icons/fa";
+
 import { CgProfile } from "react-icons/cg";
 import { BiTimeFive } from "react-icons/bi";
+import { AiOutlineContacts } from "react-icons/ai";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 
@@ -13,7 +15,7 @@ const menus = [
     link: "/",
     icon: <MdOutlineDashboard size={30} />,
   },
-  { id: 2, label: "Create", link: "/create", icon: <FaTasks size={30} /> },
+  { id: 2, label: "Todos", link: "/todos", icon: <FaTasks size={30} /> },
   {
     id: 3,
     label: "Profile",
@@ -31,6 +33,12 @@ const menus = [
     label: "Articles",
     link: "/articles",
     icon: <BiTimeFive size={30} />,
+  },
+  {
+    id: 6,
+    label: "Contact",
+    link: "/contacts",
+    icon: <AiOutlineContacts size={30} />,
   },
 ];
 const Sidebar = () => {
