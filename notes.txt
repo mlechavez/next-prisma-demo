@@ -1,0 +1,22 @@
+author
+  name required single
+  image null
+  bio multiline
+  createdAt datetime
+category
+  name required single unique
+  slug required unique single
+  createdAt datetime
+comment
+  name required single
+  email required single
+  comment required multiline
+post
+  title required single
+  slug required single
+  excerpt requird multiline
+  content required rich text
+  featuredImage required
+  isFeaturedPost required boolean default-to-false 
+  published boolean default-to-false
+
